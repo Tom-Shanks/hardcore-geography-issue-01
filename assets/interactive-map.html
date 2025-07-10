@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Denver DIY Venues: Geography of Displacement</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
             font-family: 'PT Mono', monospace;
             background: #2a2a2a;
             color: #f0f0f0;
+            overflow: hidden;
+            touch-action: manipulation;
         }
         
         .map-container {
             position: relative;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            overflow: hidden;
         }
         
         #map {
@@ -27,28 +34,119 @@
             filter: grayscale(1);
         }
         
-        .control-panel {
+        /* Mobile-first header */
+        .header {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
             background: rgba(42, 42, 42, 0.95);
-            padding: 20px;
-            border-radius: 4px;
-            border: 1px solid #ff6b35;
-            max-width: 300px;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ff6b35;
+            backdrop-filter: blur(10px);
         }
         
-        .timeline-container {
+        .header h1 {
+            margin: 0;
+            color: #ff6b35;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .header p {
+            margin: 5px 0 0 0;
+            color: #ccc;
+            font-size: 12px;
+        }
+        
+        /* Mobile-optimized control panel */
+        .control-panel {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
+            top: 70px;
+            left: 10px;
+            right: 10px;
             z-index: 1000;
             background: rgba(42, 42, 42, 0.95);
             padding: 15px;
-            border-radius: 4px;
+            border-radius: 8px;
             border: 1px solid #ff6b35;
+            backdrop-filter: blur(10px);
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .control-panel h3 {
+            margin: 0 0 10px 0;
+            color: #ff6b35;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .layer-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .layer-controls label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .layer-controls input[type="checkbox"] {
+            margin-right: 8px;
+            accent-color: #ff6b35;
+            transform: scale(1.2);
+        }
+        
+        .export-controls {
+            text-align: center;
+        }
+        
+        .export-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'PT Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .export-btn:hover {
+            background: #e55a2b;
+        }
+        
+        /* Mobile-optimized timeline */
+        .timeline-container {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            z-index: 1000;
+            background: rgba(42, 42, 42, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ff6b35;
+            backdrop-filter: blur(10px);
+        }
+        
+        .timeline-container h4 {
+            margin: 0 0 10px 0;
+            color: #ff6b35;
+            font-size: 12px;
+            text-transform: uppercase;
         }
         
         .timeline-slider {
@@ -65,66 +163,101 @@
         .timeline-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             background: #ff6b35;
             cursor: pointer;
             border-radius: 50%;
+            border: 2px solid white;
         }
         
         .timeline-slider::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             background: #ff6b35;
             cursor: pointer;
             border-radius: 50%;
-            border: none;
+            border: 2px solid white;
         }
         
-        .layer-controls {
-            margin-top: 15px;
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            margin-top: 5px;
         }
         
-        .layer-controls label {
-            display: block;
-            margin: 8px 0;
-            cursor: pointer;
-            font-size: 14px;
+        /* Mobile-optimized legend */
+        .legend {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+            background: rgba(42, 42, 42, 0.95);
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ff6b35;
+            backdrop-filter: blur(10px);
+            font-size: 11px;
+            max-width: 150px;
         }
         
-        .layer-controls input[type="checkbox"] {
-            margin-right: 8px;
-            accent-color: #ff6b35;
+        .legend h4 {
+            margin: 0 0 8px 0;
+            color: #ff6b35;
+            font-size: 11px;
+            text-transform: uppercase;
         }
         
+        .legend-item {
+            margin: 4px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 6px;
+            flex-shrink: 0;
+        }
+        
+        /* Enhanced venue popup for mobile */
         .venue-popup {
             font-family: 'PT Mono', monospace;
-            max-width: 300px;
+            max-width: 280px;
+            font-size: 12px;
         }
         
         .venue-popup h3 {
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
             color: #ff6b35;
-            font-size: 16px;
+            font-size: 14px;
+            text-transform: uppercase;
         }
         
         .venue-popup .address {
             font-style: italic;
             color: #ccc;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 11px;
         }
         
         .venue-popup .years {
             font-weight: bold;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 11px;
         }
         
         .venue-popup .status {
-            padding: 4px 8px;
+            padding: 3px 6px;
             border-radius: 3px;
-            font-size: 12px;
+            font-size: 10px;
             display: inline-block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
         
         .venue-popup .status.active {
@@ -139,123 +272,130 @@
         
         .venue-popup .closure-reason {
             color: #ff6b35;
-            font-size: 12px;
-            margin-top: 8px;
+            font-size: 10px;
+            margin-top: 6px;
         }
         
-        .export-controls {
-            margin-top: 15px;
-        }
-        
-        .export-btn {
-            background: #ff6b35;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'PT Mono', monospace;
-            font-size: 12px;
-        }
-        
-        .export-btn:hover {
-            background: #e55a2b;
-        }
-        
-        .legend {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: rgba(42, 42, 42, 0.95);
-            padding: 15px;
-            border-radius: 4px;
-            border: 1px solid #ff6b35;
-            font-size: 12px;
-        }
-        
-        .legend h4 {
-            margin: 0 0 10px 0;
-            color: #ff6b35;
-        }
-        
-        .legend-item {
-            margin: 5px 0;
-            display: flex;
-            align-items: center;
-        }
-        
-        .legend-color {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
-        
-        .header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1001;
-            background: rgba(42, 42, 42, 0.95);
-            padding: 10px 20px;
-            border-bottom: 1px solid #ff6b35;
-            font-size: 14px;
-        }
-        
-        .header h1 {
-            margin: 0;
-            color: #ff6b35;
-            font-size: 18px;
-        }
-        
-        .header p {
-            margin: 5px 0 0 0;
-            color: #ccc;
-        }
-        
+        /* Mobile-specific improvements */
         @media (max-width: 768px) {
             .control-panel {
-                position: relative;
-                top: 0;
-                left: 0;
-                margin: 60px 10px 10px 10px;
-                max-width: none;
+                top: 60px;
+                max-height: 150px;
+            }
+            
+            .layer-controls {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+            
+            .layer-controls label {
+                font-size: 11px;
+                padding: 4px;
             }
             
             .timeline-container {
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
+                bottom: 5px;
+                left: 5px;
+                right: 5px;
+                padding: 12px;
             }
             
             .legend {
-                position: relative;
-                bottom: 0;
-                right: 0;
-                margin: 10px;
+                bottom: 5px;
+                right: 5px;
+                padding: 10px;
+                max-width: 120px;
             }
             
-            .map-container {
-                height: calc(100vh - 200px);
+            .venue-popup {
+                max-width: 250px;
+                font-size: 11px;
             }
+            
+            .venue-popup h3 {
+                font-size: 13px;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        .leaflet-popup-content-wrapper {
+            border-radius: 8px;
+            background: rgba(42, 42, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .leaflet-popup-tip {
+            background: rgba(42, 42, 42, 0.95);
+        }
+        
+        .leaflet-popup-close-button {
+            color: #ff6b35;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        /* Loading indicator */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2000;
+            background: rgba(42, 42, 42, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ff6b35;
+            text-align: center;
+        }
+        
+        .loading.hidden {
+            display: none;
+        }
+        
+        /* Fullscreen toggle for mobile */
+        .fullscreen-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1002;
+            background: rgba(42, 42, 42, 0.95);
+            border: 1px solid #ff6b35;
+            color: #ff6b35;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .fullscreen-toggle:hover {
+            background: #ff6b35;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Denver DIY Venues: Geography of Displacement</h1>
-        <p>Interactive map showing 30 years of venue closures and zoning changes (1995-2025)</p>
+        <h1>Denver DIY Venues</h1>
+        <p>Geography of Displacement (1995-2025)</p>
+    </div>
+    
+    <button class="fullscreen-toggle" onclick="toggleFullscreen()">⛶</button>
+    
+    <div class="loading" id="loading">
+        <div style="color: #ff6b35; margin-bottom: 10px;">Loading Map...</div>
+        <div style="font-size: 12px; color: #ccc;">Gathering venue data</div>
     </div>
     
     <div class="map-container">
         <div class="control-panel">
-            <h3 style="margin: 0 0 15px 0; color: #ff6b35;">Filters</h3>
+            <h3>Filters</h3>
             <div class="layer-controls">
                 <label><input type="checkbox" id="activeVenues" checked> Active Venues</label>
                 <label><input type="checkbox" id="closedVenues" checked> Closed Venues</label>
                 <label><input type="checkbox" id="zoningOverlay" checked> Zoning Districts</label>
+                <label><input type="checkbox" id="riskAreas" checked> High Risk Areas</label>
             </div>
             <div class="export-controls">
                 <button class="export-btn" onclick="exportMapView()">Export PNG</button>
@@ -265,9 +405,9 @@
         <div id="map"></div>
         
         <div class="timeline-container">
-            <h4 style="margin: 0 0 10px 0; color: #ff6b35;">Timeline Filter</h4>
+            <h4>Timeline Filter</h4>
             <input type="range" class="timeline-slider" id="timelineSlider" min="1995" max="2025" value="2025" step="1">
-            <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 5px;">
+            <div class="timeline-labels">
                 <span>1995</span>
                 <span id="currentYear">2025</span>
                 <span>2025</span>
@@ -278,15 +418,15 @@
             <h4>Legend</h4>
             <div class="legend-item">
                 <div class="legend-color" style="background: #4a9;"></div>
-                <span>Active Venues</span>
+                <span>Active</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: #d44;"></div>
-                <span>Closed Venues</span>
+                <span>Closed</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: rgba(255, 107, 53, 0.3); border: 1px solid #ff6b35;"></div>
-                <span>High Displacement Risk</span>
+                <span>High Risk</span>
             </div>
         </div>
     </div>
@@ -296,8 +436,20 @@
     <script src="https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     
     <script>
-        // Initialize map
-        const map = L.map('map').setView([39.7392, -104.9903], 11);
+        // Initialize map with mobile-optimized settings
+        const map = L.map('map', {
+            zoomControl: false,
+            doubleClickZoom: false,
+            scrollWheelZoom: true,
+            dragging: true,
+            touchZoom: true,
+            tap: true
+        }).setView([39.7392, -104.9903], 11);
+        
+        // Add zoom control to top right for mobile
+        L.control.zoom({
+            position: 'topright'
+        }).addTo(map);
         
         // Add grayscale tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -305,73 +457,78 @@
             className: 'grayscale-tiles'
         }).addTo(map);
         
-        // Venue data from CSV
+        // Enhanced venue data with more details
         const venueData = [
             {name: "Monkey Mania", address: "2126 Arapahoe Street", years: "1998-2005", status: "closed", 
              lat: 39.7519, lng: -104.9852, closure: "Resident change/venue evolution", 
-             zoning: "M-I", neighborhood: "Central Denver", risk: "High"},
-            {name: "Seventh Circle Music Collective", address: "Address TBD", years: "2016-present", status: "active", 
+             zoning: "M-I", neighborhood: "Central Denver", risk: "High", description: "Legendary DIY venue in warehouse space"},
+            {name: "Seventh Circle Music Collective", address: "2935 W 7th Ave", years: "2016-present", status: "active", 
              lat: 39.7500, lng: -104.9800, closure: "", 
-             zoning: "I-M", neighborhood: "Central Denver", risk: "High"},
+             zoning: "I-M", neighborhood: "Central Denver", risk: "High", description: "Current DIY collective space"},
             {name: "Rhinoceropolis", address: "5070 N Washington St", years: "2005-2017", status: "closed", 
              lat: 39.7900, lng: -104.9700, closure: "Demolition/development", 
-             zoning: "U-MS", neighborhood: "Central Denver", risk: "High"},
+             zoning: "U-MS", neighborhood: "Central Denver", risk: "High", description: "Famous DIY venue demolished for development"},
             {name: "Kingdom of Doom", address: "2126 Arapahoe Street", years: "2005-2009", status: "closed", 
              lat: 39.7519, lng: -104.9852, closure: "Closure/development", 
-             zoning: "C-L", neighborhood: "Central Denver", risk: "High"},
+             zoning: "C-L", neighborhood: "Central Denver", risk: "High", description: "Short-lived but influential DIY space"},
             {name: "Larimer Lounge", address: "2721 Larimer Street", years: "2000s-present", status: "active", 
              lat: 39.7585, lng: -104.9848, closure: "", 
-             zoning: "M-C", neighborhood: "RiNo", risk: "Low"},
+             zoning: "M-C", neighborhood: "RiNo", risk: "Low", description: "Surviving venue in gentrified RiNo"},
             {name: "Hi-Dive", address: "7 S Broadway", years: "2003-present", status: "active", 
              lat: 39.7179, lng: -104.9878, closure: "", 
-             zoning: "R-3", neighborhood: "South Broadway", risk: "High"},
+             zoning: "R-3", neighborhood: "South Broadway", risk: "High", description: "Long-running venue under development pressure"},
             {name: "Lost Lake Lounge", address: "3602 E Colfax Ave", years: "2000s-present", status: "active", 
              lat: 39.7408, lng: -104.9356, closure: "", 
-             zoning: "C-L", neighborhood: "Colfax", risk: "Low"},
+             zoning: "C-L", neighborhood: "Colfax", risk: "Low", description: "Stable venue in established neighborhood"},
             {name: "The Meadowlark", address: "2701 Larimer Street", years: "2010s-present", status: "active", 
              lat: 39.7585, lng: -104.9849, closure: "", 
-             zoning: "M-C", neighborhood: "RiNo", risk: "Low"},
+             zoning: "M-C", neighborhood: "RiNo", risk: "Low", description: "Surviving venue in gentrified area"},
             {name: "The Bluebird Theater", address: "3317 E Colfax Ave", years: "1913-present", status: "active", 
              lat: 39.7408, lng: -104.9411, closure: "", 
-             zoning: "M-I", neighborhood: "Colfax", risk: "Low"},
+             zoning: "M-I", neighborhood: "Colfax", risk: "Low", description: "Historic venue with strong community support"},
             {name: "The Ogden Theatre", address: "935 E Colfax Ave", years: "1917-present", status: "active", 
              lat: 39.7408, lng: -104.9720, closure: "", 
-             zoning: "I-B", neighborhood: "Colfax", risk: "Low"},
+             zoning: "I-B", neighborhood: "Colfax", risk: "Low", description: "Historic venue with established presence"},
             {name: "Herman's Hideaway", address: "1578 S Broadway", years: "1980s-2020s", status: "closed", 
              lat: 39.6890, lng: -104.9871, closure: "Closure/development", 
-             zoning: "C-G", neighborhood: "South Broadway", risk: "High"},
+             zoning: "C-G", neighborhood: "South Broadway", risk: "High", description: "Long-running venue closed for development"},
             {name: "The Church", address: "1160 Lincoln Street", years: "1900s-2000s", status: "closed", 
              lat: 39.7388, lng: -104.9845, closure: "Closure/development", 
-             zoning: "M-I", neighborhood: "Downtown", risk: "High"},
+             zoning: "M-I", neighborhood: "Downtown", risk: "High", description: "Historic venue lost to downtown development"},
             {name: "Streets of London", address: "1430 Market Street", years: "1980s-1990s", status: "closed", 
              lat: 39.7514, lng: -104.9957, closure: "Closure", 
-             zoning: "I-B", neighborhood: "Downtown", risk: "High"},
+             zoning: "I-B", neighborhood: "Downtown", risk: "High", description: "Classic venue lost to downtown redevelopment"},
             {name: "The Lion's Lair", address: "2022 E Colfax Ave", years: "1960s-present", status: "active", 
              lat: 39.7408, lng: -104.9712, closure: "", 
-             zoning: "C-G", neighborhood: "Colfax", risk: "Low"},
+             zoning: "C-G", neighborhood: "Colfax", risk: "Low", description: "Historic dive bar with strong community"},
             {name: "The Skylark Lounge", address: "140 S Broadway", years: "1940s-1990s", status: "closed", 
              lat: 39.7168, lng: -104.9873, closure: "Closure", 
-             zoning: "M-I", neighborhood: "South Broadway", risk: "High"},
+             zoning: "M-I", neighborhood: "South Broadway", risk: "High", description: "Historic venue lost to development"},
             {name: "3 Kings Tavern", address: "60 S Broadway", years: "1940s-2000s", status: "closed", 
              lat: 39.7171, lng: -104.9874, closure: "Closure", 
-             zoning: "M-I", neighborhood: "South Broadway", risk: "High"}
+             zoning: "M-I", neighborhood: "South Broadway", risk: "High", description: "Long-running venue closed for development"}
         ];
         
         // Layer groups
         const activeVenuesLayer = L.layerGroup();
         const closedVenuesLayer = L.layerGroup();
         const zoningLayer = L.layerGroup();
+        const riskLayer = L.layerGroup();
         
         // Add all layers to map initially
         activeVenuesLayer.addTo(map);
         closedVenuesLayer.addTo(map);
         zoningLayer.addTo(map);
+        riskLayer.addTo(map);
         
-        // High displacement risk areas
+        // High displacement risk areas with more detail
         const highRiskAreas = [
-            {name: "Central Denver", bounds: [[39.720, -105.020], [39.780, -104.960]]},
-            {name: "Downtown", bounds: [[39.735, -105.005], [39.750, -104.975]]},
-            {name: "South Broadway", bounds: [[39.680, -104.995], [39.720, -104.980]]}
+            {name: "Central Denver", bounds: [[39.720, -105.020], [39.780, -104.960]], 
+             description: "Multiple venue closures due to rezoning and development pressure"},
+            {name: "Downtown", bounds: [[39.735, -105.005], [39.750, -104.975]], 
+             description: "Historic venues lost to downtown redevelopment"},
+            {name: "South Broadway", bounds: [[39.680, -104.995], [39.720, -104.980]], 
+             description: "Gentrification pressure on established venues"}
         ];
         
         // Add high risk area overlays
@@ -381,27 +538,28 @@
                 weight: 2,
                 fillColor: '#ff6b35',
                 fillOpacity: 0.2
-            }).addTo(zoningLayer);
+            }).addTo(riskLayer);
             
             overlay.bindPopup(`<div class="venue-popup">
                 <h3>${area.name}</h3>
                 <p><strong>Status:</strong> High Displacement Risk</p>
-                <p>Multiple venue closures due to rezoning and development pressure</p>
+                <p>${area.description}</p>
             </div>`);
         });
         
-        // Function to get venue icon
+        // Function to get venue icon with better mobile visibility
         function getVenueIcon(venue) {
             const color = venue.status === 'active' ? '#4a9' : '#d44';
+            const size = venue.status === 'active' ? 14 : 12;
             return L.divIcon({
-                html: `<div style="background: ${color}; border: 2px solid white; border-radius: 50%; width: 12px; height: 12px;"></div>`,
-                iconSize: [12, 12],
-                iconAnchor: [6, 6],
+                html: `<div style="background: ${color}; border: 2px solid white; border-radius: 50%; width: ${size}px; height: ${size}px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [size, size],
+                iconAnchor: [size/2, size/2],
                 className: 'venue-marker'
             });
         }
         
-        // Function to create popup content
+        // Enhanced popup content for mobile
         function createPopup(venue) {
             const statusClass = venue.status === 'active' ? 'active' : 'closed';
             const closureInfo = venue.closure ? `<div class="closure-reason"><strong>Closure:</strong> ${venue.closure}</div>` : '';
@@ -414,6 +572,7 @@
                 <div><strong>Zoning:</strong> ${venue.zoning}</div>
                 <div><strong>Neighborhood:</strong> ${venue.neighborhood}</div>
                 <div><strong>Risk Level:</strong> ${venue.risk}</div>
+                <div style="margin-top: 8px; font-style: italic; color: #ccc;">${venue.description}</div>
                 ${closureInfo}
             </div>`;
         }
@@ -429,12 +588,16 @@
             return {start, end};
         }
         
-        // Add venue markers
+        // Add venue markers with enhanced mobile interaction
         venueData.forEach(venue => {
             if (venue.lat && venue.lng) {
                 const marker = L.marker([venue.lat, venue.lng], {
                     icon: getVenueIcon(venue)
-                }).bindPopup(createPopup(venue));
+                }).bindPopup(createPopup(venue), {
+                    closeButton: true,
+                    maxWidth: 280,
+                    className: 'venue-popup-container'
+                });
                 
                 if (venue.status === 'active') {
                     marker.addTo(activeVenuesLayer);
@@ -447,7 +610,7 @@
             }
         });
         
-        // Layer control functionality
+        // Enhanced layer control functionality
         document.getElementById('activeVenues').addEventListener('change', function() {
             if (this.checked) {
                 activeVenuesLayer.addTo(map);
@@ -472,7 +635,15 @@
             }
         });
         
-        // Timeline functionality
+        document.getElementById('riskAreas').addEventListener('change', function() {
+            if (this.checked) {
+                riskLayer.addTo(map);
+            } else {
+                map.removeLayer(riskLayer);
+            }
+        });
+        
+        // Enhanced timeline functionality
         const timelineSlider = document.getElementById('timelineSlider');
         const currentYearDisplay = document.getElementById('currentYear');
         
@@ -495,14 +666,15 @@
             });
         });
         
-        // Export functionality
+        // Enhanced export functionality
         function exportMapView() {
             const mapElement = document.getElementById('map');
             
             html2canvas(mapElement, {
                 useCORS: true,
                 scale: 2,
-                backgroundColor: '#2a2a2a'
+                backgroundColor: '#2a2a2a',
+                allowTaint: true
             }).then(canvas => {
                 const link = document.createElement('a');
                 link.download = `denver-venues-map-${new Date().toISOString().slice(0, 10)}.png`;
@@ -511,20 +683,43 @@
             });
         }
         
-        // QR code integration placeholder
-        const qrCodeContainer = document.createElement('div');
-        qrCodeContainer.innerHTML = `
-            <div style="position: absolute; top: 80px; right: 20px; z-index: 1000; 
-                        background: rgba(42, 42, 42, 0.95); padding: 10px; border-radius: 4px; 
-                        border: 1px solid #ff6b35; text-align: center; font-size: 12px;">
-                <div style="color: #ff6b35; margin-bottom: 5px;">Scan for Full Project</div>
-                <div style="width: 80px; height: 80px; background: #fff; margin: 0 auto; 
-                           display: flex; align-items: center; justify-content: center; font-size: 8px; color: #000;">
-                    QR CODE<br/>PLACEHOLDER
-                </div>
-            </div>
-        `;
-        document.body.appendChild(qrCodeContainer);
+        // Fullscreen toggle functionality
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+        
+        // Hide loading indicator when map is ready
+        map.whenReady(() => {
+            document.getElementById('loading').classList.add('hidden');
+        });
+        
+        // Mobile-specific optimizations
+        if (window.innerWidth <= 768) {
+            // Adjust map view for mobile
+            map.setView([39.7392, -104.9903], 10);
+            
+            // Add touch-friendly controls
+            map.on('click', function() {
+                // Close any open popups when clicking on map
+                map.closePopup();
+            });
+        }
+        
+        // Handle orientation changes
+        window.addEventListener('orientationchange', function() {
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 100);
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            map.invalidateSize();
+        });
     </script>
 </body>
 </html>
