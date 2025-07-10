@@ -1,0 +1,29 @@
+
+DENVER DIY DISPLACEMENT DATA SUMMARY
+
+OVERVIEW:
+Total venues documented: 30
+Active venues: 17
+Closed venues: 13
+Displacement-related closures: 11
+
+HIGH-RISK NEIGHBORHOODS:
+Central Denver, Downtown, South Broadway
+
+VENUE DISTRIBUTION BY ZONING:
+  C-G: 5 venues
+  C-L: 2 venues
+  I-B: 8 venues
+  I-M: 1 venues
+  M-C: 2 venues
+  M-I: 9 venues
+  R-3: 1 venues
+  U-MS: 2 venues
+
+NEIGHBORHOOD ANALYSIS:
+  Central Denver: 13 venues (High risk)
+  Colfax: 6 venues (Low risk)
+  Downtown: 3 venues (High risk)
+  Five Points: 1 venues (Low risk)
+  RiNo: 2 venues (Low risk)
+  South Broadway: 5 venues (High risk)
