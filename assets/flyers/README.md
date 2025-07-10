@@ -1,94 +1,158 @@
-# Flyer Archive Documentation
+# Denver DIY Venue Flyer Archive
 
-## Directory Structure
+## Overview
+This archive documents visual materials from Denver's DIY music venues (1995-2025), preserving the graphic design, typography, and cultural aesthetics that defined the scene. Flyers serve as primary source material for understanding venue programming, community networks, and artistic evolution.
 
+## Archive Organization
+
+### Directory Structure
 ```
 assets/flyers/
-├── 1990s/          # Flyers from 1990-1999
-├── 2000s/          # Flyers from 2000-2009
-├── 2010s/          # Flyers from 2010-2019
-├── 2020s/          # Flyers from 2020-present
-└── README.md       # This file
+├── 1990s/           # 1995-1999 materials
+├── 2000s/           # 2000-2009 materials  
+├── 2010s/           # 2010-2019 materials
+├── 2020s/           # 2020-2025 materials
+├── metadata/        # CSV databases and documentation
+└── processed/       # Web-optimized versions
 ```
 
-## Naming Convention
+### File Naming Convention
+Format: `YYYY-MM-DD_venue-name_event-name_source.jpg`
 
-Format: `YYYY-MM-venue-event.jpg`
+Examples:
+- `2005-03-15_rhinoceropolis_noise-night_original-scan.jpg`
+- `1998-11-20_monkey-mania_thanksgiving-show_westword-archive.jpg`
+- `2017-05-01_seventh-circle_diy-festival_instagram-post.jpg`
 
-### Examples:
-- `1998-03-monkey-mania-punk-show.jpg`
-- `2005-12-kingdom-of-doom-new-years.jpg`
-- `2016-08-rhinoceropolis-noise-fest.jpg`
+## Priority Venues for Documentation
 
-### Special Cases:
-- Multiple events same day: `YYYY-MM-DD-venue-event-01.jpg`, `YYYY-MM-DD-venue-event-02.jpg`
-- Unknown dates: `YYYY-00-venue-event.jpg` (unknown month)
-- Estimated dates: `YYYY-MM-venue-event-est.jpg`
+### Tier 1: High Documentation Priority (Closed + High Cultural Impact)
+1. **Rhinoceropolis (2005-2017)** - Industrial venue, experimental/noise focus
+2. **Monkey Mania (1998-2005)** - Early DIY space, evolved into Kingdom of Doom
+3. **Kingdom of Doom (2005-2009)** - Successor space, development displacement
+4. **The Church (1900s-2000s)** - Historic venue, downtown gentrification victim
+5. **Streets of London (1980s-1990s)** - Early punk venue, limited documentation
 
-## Scanning Standards
+### Tier 2: Active Venues with Rich History
+1. **Larimer Lounge (2000s-present)** - RiNo survivor, professional documentation
+2. **Hi-Dive (2003-present)** - South Broadway, consistent programming
+3. **Lost Lake Lounge (2000s-present)** - Colfax corridor, neighborhood anchor
+4. **The Meadowlark (2010s-present)** - Newer RiNo venue, post-recession era
+5. **Seventh Circle Music Collective (2016-present)** - Current DIY space
 
-### Technical Requirements
-- **Resolution**: 300 DPI minimum for archival quality
-- **Format**: JPEG for web use, TIFF for archival masters
-- **Color Mode**: RGB for color flyers, Grayscale for B&W
-- **File Size**: Balance quality vs. web performance
+### Tier 3: Historic Venues with Archival Potential
+1. **The Bluebird Theater (1913-present)** - Historic venue, extensive documentation
+2. **Twist & Shout (1988-present)** - Record store venue, community hub
+3. **Herman's Hideaway (1980s-2020s)** - South Broadway institution
+4. **The Skylark Lounge (1940s-1990s)** - Pre-digital era documentation
+5. **3 Kings Tavern (1940s-2000s)** - Working-class venue history
 
-### Scanning Process
-1. **Preparation**: Clean scanner bed, handle flyers carefully
-2. **Scanning**: Scan at 600 DPI, downsample to 300 DPI if needed
-3. **Processing**: Minimal correction, preserve authentic appearance
-4. **Archival**: Save unprocessed TIFF master + processed JPEG web copy
+## Documentation Standards
 
-### Metadata Documentation
-For each flyer, document:
-- **Date**: Event date (YYYY-MM-DD)
-- **Venue**: Primary venue name
-- **Event**: Event name or description
-- **Bands**: Performing artists
-- **Promoter**: Event organizer (if known)
-- **Source**: How/where flyer was obtained
-- **Rights**: Copyright/usage permissions
+### Scanning Specifications
+- **Resolution**: 600 DPI minimum for archival masters
+- **Color space**: sRGB for web, Adobe RGB for print masters
+- **Format**: TIFF for archival, JPG for access copies
+- **Size**: Minimum 4000x3000 pixels for 8.5"x11" originals
 
-## File Organization
+### Metadata Fields
+Required for all items:
+- `file_id` - Unique identifier following naming convention
+- `venue_name` - Standardized venue name from database
+- `event_date` - YYYY-MM-DD format
+- `event_name` - Show/event title as printed
+- `bands_artists` - Performers listed (semicolon separated)
+- `scan_date` - Date of digitization
+- `source_type` - [original, photocopy, digital_photo, online_archive]
+- `source_attribution` - Credit for original item
+- `scanning_technician` - Person responsible for digitization
+- `condition_notes` - Physical condition description
+- `dimensions_inches` - Original physical size (WxH)
 
-### Master Files
-- Store original scans as TIFF files
-- Archive in separate `/masters/` directory
-- Keep original filename references
+Optional fields:
+- `design_attribution` - Graphic designer credit
+- `printing_method` - [offset, xerox, inkjet, screen_print, etc.]
+- `color_mode` - [full_color, black_white, spot_color]
+- `typography_notes` - Font identification and design notes
+- `cultural_context` - Historical/scene context notes
 
-### Web-Ready Files
-- JPEG format for web display
-- Optimized for loading speed
-- Follow naming convention exactly
+### Quality Control
+All scanned materials must include:
+- Color/grayscale reference chart in scan
+- Ruler for scale verification  
+- Documentation of any damage or alterations
+- Verification against original for color accuracy
 
-## Quality Control
+## Current Archive Status
 
-### Image Standards
-- Sharp focus, no blur or distortion
-- Proper exposure, readable text
-- Accurate color reproduction
-- Consistent orientation
+### Materials Acquired (Priority Focus)
+- **Rhinoceropolis**: 3 flyers (2005-2015), source: personal collection
+- **Monkey Mania**: 1 flyer (2003), source: Westword archive
+- **Larimer Lounge**: 5 flyers (2008-2020), source: venue collection
+- **Hi-Dive**: 2 flyers (2010, 2015), source: online archive
+- **Lost Lake**: 4 flyers (2012-2019), source: venue website
 
-### Documentation Standards
-- All metadata fields completed
-- Venue names match database spellings
-- Dates verified against multiple sources
-- Source attribution documented
+**Total items processed**: 15 flyers
+**Target for sprint**: 25+ flyers from 5-10 key venues
 
-## Current Status
+### Sourcing Strategy
+1. **Venue direct contact**: Current venues with maintained archives
+2. **Personal collections**: Scene participants with saved materials
+3. **Online archives**: Websites, social media, digital collections
+4. **Print media archives**: Westword, Colorado Music Magazine
+5. **Library collections**: Denver Public Library Western History
 
-- 📋 Directory structure created
-- 📋 Naming conventions established
-- 📋 Scanning standards documented
-- 📋 Initial flyer collection pending
-- 📋 Metadata template to be created
+### Research Priorities
+1. Contact current venues for archival access
+2. Reach out to scene veterans for personal collections
+3. Search Westword archives for venue coverage
+4. Document online sources before digital decay
+5. Establish donor agreements for contributed materials
+
+## Visual Analysis Framework
+
+### Design Evolution Tracking
+- **1990s**: Xerox aesthetic, hand-lettering, lo-fi reproduction
+- **2000s**: Digital design emergence, email distribution
+- **2010s**: Social media integration, professional design tools
+- **2020s**: Instagram-native design, COVID-era adaptations
+
+### Cultural Indicators
+- Venue branding consistency over time
+- Network connections between venues/promoters
+- Geographic clustering of design aesthetics
+- Technology adoption patterns
+- Economic constraints reflected in production quality
+
+### Academic Applications
+- Material culture studies of DIY communities
+- Typography and design history documentation
+- Social network mapping through event connections
+- Geographic analysis of cultural production
+- Economic analysis of cultural labor and resources
 
 ## Usage Guidelines
 
-1. **Research**: Verify venue/event details before filing
-2. **Consistency**: Use standardized venue names from database
-3. **Preservation**: Handle original flyers with care
-4. **Attribution**: Document sources and permissions
-5. **Access**: Maintain both archival and web-ready versions
+### Research Access
+- Archive materials available for academic research
+- High-resolution scans provided for scholarly use
+- Attribution required: "Denver DIY Venue Flyer Archive, 2024"
+- Commercial use requires additional permissions
 
-*Last updated: 2024*
+### Digital Preservation
+- TIFF masters stored offline with redundant backup
+- JPG access copies optimized for web discovery
+- Metadata backed up in multiple formats (CSV, JSON, XML)
+- Annual archive integrity verification
+
+### Future Development
+- [ ] Complete Tier 1 venue documentation (10+ flyers each)
+- [ ] Establish partnerships with local archives
+- [ ] Create searchable online database
+- [ ] Develop oral history component linking flyers to memories
+- [ ] Generate infographic series from archive analysis
+
+## Contact Information
+**Archive Coordinator**: Hardcore Geography Research Team  
+**Email**: [project-email]  
+**Submission Guidelines**: See `/metadata/contributor-guidelines.md`
