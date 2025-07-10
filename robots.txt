@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hardcore-geography-issue-01.github.io/sitemap.xml
+
+# Allow all content to be indexed
+Allow: /essays/
+Allow: /assets/
+Allow: /data/
+Allow: /zine/
+
+# Disallow temporary or development files
+Disallow: /site/
+Disallow: /content/
+Disallow: /research/
+Disallow: /scripts/
