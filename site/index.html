@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardcore Geography: Sonic Archaeology of Denver's DIY Displacement</title>
+    <meta name="description" content="Documenting the systematic displacement of Denver's DIY music venues through geographic analysis, audio archaeology, and community resistance.">
+    
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic:ital,opsz,wght@0,7..40,100..900;1,7..40,100..900&family=PT+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        :root {
+            --primary-color: #ff6b35;
+            --text-color: #1a1a1a;
+            --background-color: #ffffff;
+            --accent-gray: #666666;
+            --light-gray: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PT Mono', monospace;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--text-color);
+            color: var(--background-color);
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .header-content {
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: 'League Gothic', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .project-description {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--light-gray);
+            padding: 1rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .content-section {
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 4px;
+        }
+        
+        .section-title {
+            font-family: 'League Gothic', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .section-content {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Essays */
+        .essays-section {
+            grid-column: 1 / -1;
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+        
+        .essay-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .essay-card {
+            background-color: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .essay-title {
+            font-family: 'League Gothic', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .essay-meta {
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            margin-bottom: 1rem;
+        }
+        
+        .essay-excerpt {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        /* Interactive Map */
+        .map-section {
+            grid-column: 1 / -1;
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+        
+        .map-container {
+            background-color: var(--background-color);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        
+        .map-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        
+        /* Audio Section */
+        .audio-section {
+            grid-column: 1 / -1;
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+        
+        .episode-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .episode-card {
+            background-color: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .episode-title {
+            font-family: 'League Gothic', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .episode-description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .episode-status {
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            font-style: italic;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: var(--background-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-link {
+            color: var(--background-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            margin-top: 1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .essay-grid,
+            .episode-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Hardcore Geography</h1>
+                <div class="subtitle">Sonic Archaeology of Denver's DIY Displacement</div>
+                <div class="project-description">
+                    Documenting the systematic displacement of Denver's DIY music venues through geographic analysis, 
+                    audio archaeology, and community resistance. A multi-format exploration of gentrification, 
+                    cultural erasure, and underground persistence.
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#essays" class="nav-link">Essays</a>
+                <a href="#map" class="nav-link">Interactive Map</a>
+                <a href="#audio" class="nav-link">Podcast</a>
+                <a href="#data" class="nav-link">Data</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Essays Section -->
+        <section id="essays" class="essays-section">
+            <h2 class="section-title">Research Essays</h2>
+            <div class="section-content">
+                <p>Three comprehensive essays documenting the geographic patterns of venue displacement, 
+                the aesthetics of culture-washing, and strategies of sonic resistance in Denver's DIY music scene.</p>
+            </div>
+            <div class="essay-grid">
+                <article class="essay-card">
+                    <h3 class="essay-title">The Geography of Displacement</h3>
+                    <div class="essay-meta">1,654 words • Academic Analysis</div>
+                    <div class="essay-excerpt">
+                        Mapping the systematic displacement of DIY venues through zoning changes, real estate speculation, 
+                        and municipal planning policy from 1995-2025. Documents the transformation of Denver from affordable 
+                        warehouse spaces to luxury development landscapes.
+                    </div>
+                    <a href="/essays/geography-displacement" class="read-more">Read Full Essay →</a>
+                </article>
+                
+                <article class="essay-card">
+                    <h3 class="essay-title">Culture-Washing and the Aesthetics of Displacement</h3>
+                    <div class="essay-meta">1,598 words • Case Studies</div>
+                    <div class="essay-excerpt">
+                        Analysis of RiNo and Highland transformation case studies, examining how creative communities 
+                        are cultivated and then systematically erased to facilitate gentrification and luxury development.
+                    </div>
+                    <a href="/essays/culture-washing" class="read-more">Read Full Essay →</a>
+                </article>
+                
+                <article class="essay-card">
+                    <h3 class="essay-title">Sonic Resistance: The Underground Persists</h3>
+                    <div class="essay-meta">1,847 words • Resistance Strategies</div>
+                    <div class="essay-excerpt">
+                        Documentation of adaptation strategies, house shows, technological resistance, and community 
+                        networks that sustain DIY culture despite systematic displacement and gentrification pressure.
+                    </div>
+                    <a href="/essays/sonic-resistance" class="read-more">Read Full Essay →</a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Interactive Map Section -->
+        <section id="map" class="map-section">
+            <h2 class="section-title">Interactive Venue Map</h2>
+            <div class="section-content">
+                <p>Explore 30+ Denver DIY venues with timeline filtering, closure patterns, and displacement analysis. 
+                Click venues for detailed metadata and closure information.</p>
+            </div>
+            <div class="map-container">
+                <iframe src="/assets/interactive-map.html" class="map-frame" title="Interactive Denver DIY Venue Map"></iframe>
+            </div>
+        </section>
+        
+        <!-- Audio Section -->
+        <section id="audio" class="audio-section">
+            <h2 class="section-title">Podcast Series</h2>
+            <div class="section-content">
+                <p>Three-episode audio series documenting the sonic archaeology of venue displacement through interviews, 
+                ambient recordings, and community narratives.</p>
+            </div>
+            <div class="episode-grid">
+                <article class="episode-card">
+                    <h3 class="episode-title">Episode 1: Concrete and Sound</h3>
+                    <div class="episode-description">
+                        The physical transformation of Denver's DIY music landscape through demolition sounds, 
+                        construction audio, and venue closure narratives. 30-minute format with ambient recordings 
+                        and community interviews.
+                    </div>
+                    <div class="episode-status">Production in Progress • Target: February 2025</div>
+                </article>
+                
+                <article class="episode-card">
+                    <h3 class="episode-title">Episode 2: Zoning Wars</h3>
+                    <div class="episode-description">
+                        The policy framework of displacement through zoning changes, planning documents, and 
+                        municipal decision-making that systematically eliminates cultural spaces.
+                    </div>
+                    <div class="episode-status">Pre-Production • Target: March 2025</div>
+                </article>
+                
+                <article class="episode-card">
+                    <h3 class="episode-title">Episode 3: Future Frequencies</h3>
+                    <div class="episode-description">
+                        Adaptation strategies, technological resistance, and community networks that sustain 
+                        DIY culture in the face of systematic displacement and gentrification.
+                    </div>
+                    <div class="episode-status">Pre-Production • Target: April 2025</div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Data & Resources Section -->
+        <section class="main-content">
+            <div class="content-section">
+                <h3 class="section-title">Data Package</h3>
+                <div class="section-content">
+                    <p>Complete venue database with 30+ locations, closure patterns, and displacement analysis. 
+                    Available for download in CSV and GeoJSON formats with full documentation.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem;">
+                        <li>Venue database (CSV format)</li>
+                        <li>Geographic data (GeoJSON)</li>
+                        <li>Zoning change records</li>
+                        <li>Statistical analysis</li>
+                        <li>Methodology documentation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3 class="section-title">Print Publication</h3>
+                <div class="section-content">
+                    <p>32-page zine featuring all three essays, static map exports, historical flyer gallery, 
+                    and complete bibliography. Available at DIY venues, record stores, and coffee shops.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem;">
+                        <li>Half-letter format (5.5" x 8.5")</li>
+                        <li>Grayscale + spot color design</li>
+                        <li>300 DPI print resolution</li>
+                        <li>QR codes for digital integration</li>
+                        <li>Limited edition of 500 copies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="content-section" style="grid-column: 1 / -1;">
+            <h3 class="section-title">About the Project</h3>
+            <div class="section-content">
+                <p><strong>Hardcore Geography</strong> is a multi-format research project documenting the systematic 
+                displacement of Denver's DIY music venues through geographic analysis, audio archaeology, and community 
+                resistance narratives.</p>
+                
+                <p>The project combines academic research with hardcore aesthetic to examine how municipal zoning codes, 
+                real estate speculation, and planning policy collaborate to eliminate spaces of cultural resistance. 
+                Through essays, interactive mapping, audio documentation, and print publication, we trace the sonic 
+                archaeology of gentrification and document strategies of underground persistence.</p>
+                
+                <p><strong>Methodology:</strong> Spatial analysis of 30+ venues (1995-2025), community interviews, 
+                ambient audio recording, historical flyer documentation, and policy analysis of zoning changes and 
+                development patterns.</p>
+                
+                <p><strong>Outputs:</strong> Three academic essays (5,099 words), interactive venue map, three-episode 
+                podcast series, 32-page print zine, and open data package for community use and further research.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#essays" class="footer-link">Essays</a>
+                    <a href="#map" class="footer-link">Interactive Map</a>
+                    <a href="#audio" class="footer-link">Podcast</a>
+                    <a href="#data" class="footer-link">Data</a>
+                    <a href="#about" class="footer-link">About</a>
+                </div>
+                <div class="copyright">
+                    © 2025 Hardcore Geography Project. Academic research for community use. 
+                    Data available under MIT license. Audio content for educational purposes.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
