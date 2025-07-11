@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Debug Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .debug-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #333;
+            margin: 10px;
+            background: #ddd;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .info {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Debug Test</h1>
+    
+    <div class="debug-section">
+        <h2>Test 1: Basic Image Display</h2>
+        <p>If you see broken image icons or empty spaces below, the images are not loading properly.</p>
+        <div id="image-test-1">
+            <img src="assets/images/rhinoceropolis-venue.jpg" alt="Rhinoceropolis venue" class="test-image" onload="markSuccess('img1')" onerror="markError('img1')">
+            <img src="assets/images/house-show-basement.jpg" alt="House show basement" class="test-image" onload="markSuccess('img2')" onerror="markError('img2')">
+            <img src="assets/images/diy-recording-studio.jpg" alt="DIY recording studio" class="test-image" onload="markSuccess('img3')" onerror="markError('img3')">
+        </div>
+        <div id="status-1">
+            <p><span id="img1-status" class="info">Loading...</span></p>
+            <p><span id="img2-status" class="info">Loading...</span></p>
+            <p><span id="img3-status" class="info">Loading...</span></p>
+        </div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Test 2: Direct File Access</h2>
+        <p>Try clicking these links to see if the images open directly:</p>
+        <ul>
+            <li><a href="assets/images/rhinoceropolis-venue.jpg" target="_blank">Rhinoceropolis venue (65KB)</a></li>
+            <li><a href="assets/images/house-show-basement.jpg" target="_blank">House show basement (50KB)</a></li>
+            <li><a href="assets/images/diy-recording-studio.jpg" target="_blank">DIY recording studio (105KB)</a></li>
+        </ul>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Test 3: Alternative Image Sources</h2>
+        <p>These are external test images to compare:</p>
+        <img src="https://via.placeholder.com/300x200/ff6b35/ffffff?text=Test+Image" alt="Test placeholder" class="test-image">
+        <img src="https://picsum.photos/300/200" alt="Random test image" class="test-image">
+    </div>
+    
+    <div class="debug-section">
+        <h2>Diagnostic Information</h2>
+        <p><strong>File sizes:</strong></p>
+        <ul>
+            <li>rhinoceropolis-venue.jpg: 65,698 bytes</li>
+            <li>house-show-basement.jpg: 50,487 bytes</li>
+            <li>diy-recording-studio.jpg: 105,684 bytes</li>
+        </ul>
+        <p><strong>Expected behavior:</strong> If the images are working correctly, you should see actual photos of venues, basements, and recording studios. If you see blank spaces, broken image icons, or "holes ash images" as you mentioned, then the image files are likely corrupted or placeholder files.</p>
+    </div>
+
+    <script>
+        function markSuccess(imgId) {
+            document.getElementById(imgId + '-status').textContent = '✓ Image loaded successfully';
+            document.getElementById(imgId + '-status').className = 'success';
+        }
+        
+        function markError(imgId) {
+            document.getElementById(imgId + '-status').textContent = '✗ Image failed to load';
+            document.getElementById(imgId + '-status').className = 'error';
+        }
+        
+        // Check if images loaded after a delay
+        setTimeout(function() {
+            const images = document.querySelectorAll('#image-test-1 img');
+            images.forEach((img, index) => {
+                const imgId = 'img' + (index + 1);
+                if (!img.complete || img.naturalWidth === 0) {
+                    markError(imgId);
+                }
+            });
+        }, 2000);
+    </script>
+</body>
+</html>
