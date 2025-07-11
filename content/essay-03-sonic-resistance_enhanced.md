@@ -1,8 +1,8 @@
 # Essay 3: Sonic Resistance: The Underground Persists
 
 The demolition of Rhinoceropolis in February 2017 was supposed to be the end of something. City officials, developers, and music industry professionals treated the closure as inevitable: another DIY venue sacrificed to Denver's "progress" toward becoming a "world-class city." But within six months of Rhino's demolition, new spaces emerged across the metro area—house shows in suburban basements, temporary venues in warehouse districts, rooftop performances in spaces too marginal for commercial development. The underground didn't disappear; it adapted, evolved, and found new ways to exist in the gaps that capital cannot or will not fill.
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="inline-photo">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="development photo" class="inline-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Music venue exterior, showing the type of cultural space that has been systematically displaced" title="Music venue exterior, showing the type of cultural space that has been systematically displaced"
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Venue interior during performance, demonstrating the community spaces lost to development pressure" title="Venue interior during performance, demonstrating the community spaces lost to development pressure"
 
 This persistence reveals what James C. Scott calls "the weapons of the weak": the everyday practices through which subordinated communities resist domination without direct confrontation (Scott 1985, 28-47). Denver's DIY music scene has developed what might be called "sonic weapons"—spatial, technological, and organizational strategies that maintain cultural production despite systematic displacement. These tactics don't stop gentrification, but they create persistent spaces of resistance that complicate the total commodification of urban culture.
 
@@ -92,16 +92,16 @@ Scott, James C. 1985. *Weapons of the Weak: Everyday Forms of Peasant Resistance
 <div class="photo-galleries">
 
 <div class="photo-gallery venue-gallery">
-<h3>Rhinoceropolis - Photo Gallery</h3>
+<h3>Rhinoceropolis - The Lost DIY Venue (2005-2017)</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue building, representing the cultural infrastructure eliminated through gentrification" title="Music venue building, representing the cultural infrastructure eliminated through gentrification"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Venue space, showing how DIY music scenes have adapted to changing urban conditions" title="Venue space, showing how DIY music scenes have adapted to changing urban conditions"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue exterior, showing the type of cultural space that has been systematically displaced" title="Music venue exterior, showing the type of cultural space that has been systematically displaced"
 </div>
 </div>
 </div>
@@ -110,7 +110,7 @@ Scott, James C. 1985. *Weapons of the Weak: Everyday Forms of Peasant Resistance
 <h3>Seventh Circle Music Collective - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Seventh Circle Music Collective photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Seventh Circle Music Collective during a show, demonstrating alternative organizational models for DIY venues" title="Seventh Circle Music Collective during a show, demonstrating alternative organizational models for DIY venues"
 </div>
 </div>
 </div>
@@ -119,7 +119,7 @@ Scott, James C. 1985. *Weapons of the Weak: Everyday Forms of Peasant Resistance
 <h3>Park Hill - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Park Hill photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue building, representing the cultural infrastructure eliminated through gentrification" title="Music venue building, representing the cultural infrastructure eliminated through gentrification"
 </div>
 </div>
 </div>
@@ -128,31 +128,31 @@ Scott, James C. 1985. *Weapons of the Weak: Everyday Forms of Peasant Resistance
 <h3>Lakewood - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Lakewood photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Venue space, showing how DIY music scenes have adapted to changing urban conditions" title="Venue space, showing how DIY music scenes have adapted to changing urban conditions"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Warehouse - Photo Gallery</h3>
+<h3>Warehouse Venues - The Displaced Cultural Infrastructure</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="warehouse photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial warehouse space, showing the type of affordable venue that supported Denver's DIY music scene" title="Industrial warehouse space, showing the type of affordable venue that supported Denver's DIY music scene"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="warehouse photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable" title="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Industrial - Photo Gallery</h3>
+<h3>Industrial Spaces - From Cultural Production to Luxury Development</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue building, representing the cultural infrastructure eliminated through gentrification" title="Music venue building, representing the cultural infrastructure eliminated through gentrification"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Venue space, showing how DIY music scenes have adapted to changing urban conditions" title="Venue space, showing how DIY music scenes have adapted to changing urban conditions"
 </div>
 </div>
 </div>
@@ -161,34 +161,34 @@ Scott, James C. 1985. *Weapons of the Weak: Everyday Forms of Peasant Resistance
 <h3>Diy - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="DIY music scene, showing the community-driven cultural production that persists despite displacement" title="DIY music scene, showing the community-driven cultural production that persists despite displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="DIY venue space, demonstrating the grassroots cultural infrastructure that operates outside commercial markets" title="DIY venue space, demonstrating the grassroots cultural infrastructure that operates outside commercial markets"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Gentrification - Photo Gallery</h3>
+<h3>Gentrification - The Systematic Elimination of Cultural Space</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="gentrification photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue building, representing the cultural infrastructure eliminated through gentrification" title="Music venue building, representing the cultural infrastructure eliminated through gentrification"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="gentrification photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Venue space, showing how DIY music scenes have adapted to changing urban conditions" title="Venue space, showing how DIY music scenes have adapted to changing urban conditions"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Development - Photo Gallery</h3>
+<h3>Development - Real Estate Speculation and Cultural Displacement</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Music venue exterior, showing the type of cultural space that has been systematically displaced" title="Music venue exterior, showing the type of cultural space that has been systematically displaced"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Venue interior during performance, demonstrating the community spaces lost to development pressure" title="Venue interior during performance, demonstrating the community spaces lost to development pressure"
 </div>
 </div>
 </div>
