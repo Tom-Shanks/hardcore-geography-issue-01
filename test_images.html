@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .test-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #333;
+            margin: 10px;
+        }
+        .inline-test {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            float: right;
+            margin: 10px;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Display Test</h1>
+    
+    <h2>Test 1: Inline Image</h2>
+    <p>This is a test paragraph with an inline image: <img src="assets/images/rhinoceropolis-venue.jpg" alt="Rhinoceropolis venue" class="inline-test"> The image should appear to the right of this text. If you can see the image, it means the file is accessible and displaying correctly.</p>
+    
+    <h2>Test 2: Gallery Images</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <img src="assets/images/rhinoceropolis-venue.jpg" alt="Rhinoceropolis venue" class="test-image">
+        <img src="assets/images/house-show-basement.jpg" alt="House show basement" class="test-image">
+        <img src="assets/images/diy-recording-studio.jpg" alt="DIY recording studio" class="test-image">
+        <img src="assets/images/underground-music-scene.jpg" alt="Underground music scene" class="test-image">
+        <img src="assets/images/warehouse-industrial-space.jpg" alt="Warehouse industrial space" class="test-image">
+        <img src="assets/images/luxury-development.jpg" alt="Luxury development" class="test-image">
+    </div>
+    
+    <h2>Test 3: Direct Links</h2>
+    <p>If the images above don't show, try these direct links:</p>
+    <ul>
+        <li><a href="assets/images/rhinoceropolis-venue.jpg" target="_blank">Rhinoceropolis venue</a></li>
+        <li><a href="assets/images/house-show-basement.jpg" target="_blank">House show basement</a></li>
+        <li><a href="assets/images/diy-recording-studio.jpg" target="_blank">DIY recording studio</a></li>
+        <li><a href="assets/images/underground-music-scene.jpg" target="_blank">Underground music scene</a></li>
+        <li><a href="assets/images/warehouse-industrial-space.jpg" target="_blank">Warehouse industrial space</a></li>
+        <li><a href="assets/images/luxury-development.jpg" target="_blank">Luxury development</a></li>
+    </ul>
+</body>
+</html>
