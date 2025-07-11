@@ -1,9 +1,9 @@
 # Essay 1: The Geography of Displacement
 
 On February 8, 2017, Denver city officials posted demolition notices on the warehouse at 5070 North Washington Street that housed Rhinoceropolis, a DIY venue that had operated in the industrial Elyria-Swansea neighborhood since 2005. Founded by Travis Egedy (Pictureplane) and Warren Bedell, "Rhino" had become a cornerstone of Denver's experimental music scene: hosting noise shows, art installations, and all-ages punk shows in a sprawling former print shop zoned for Mixed Use-Industrial development. The closure followed a familiar pattern of displacement that has systematically erased DIY venues across Denver through the intersection of zoning policy, real estate speculation, and what urban scholars call "culture-washing"—the deliberate cultivation and subsequent erasure of creative communities to facilitate gentrification (Zukin 2010, 2-3).
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="inline-photo">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="warehouse photo" class="inline-photo">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="gentrification photo" class="inline-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Rhinoceropolis venue exterior in the Elyria-Swansea neighborhood, showing the warehouse space that housed Denver's experimental music scene from 2005-2017" title="Rhinoceropolis venue exterior in the Elyria-Swansea neighborhood, showing the warehouse space that housed Denver's experimental music scene from 2005-2017"
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable" title="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable"
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Gentrification street scene, representing the aesthetic appropriation of displaced communities" title="Gentrification street scene, representing the aesthetic appropriation of displaced communities"
 
 This systematic displacement represents more than isolated venue closures: it reveals how municipal zoning codes and real estate capital collaborate to eliminate spaces of cultural resistance. Through spatial analysis of 30 Denver DIY venues operating between 1995 and 2025, this essay maps the geographic patterns of displacement that have transformed Denver from a city with affordable warehouse spaces into a landscape of luxury development where creative communities can no longer afford to exist.
 
@@ -73,40 +73,40 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <div class="photo-galleries">
 
 <div class="photo-gallery venue-gallery">
-<h3>Rhinoceropolis - Photo Gallery</h3>
+<h3>Rhinoceropolis - The Lost DIY Venue (2005-2017)</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Rhinoceropolis venue exterior in the Elyria-Swansea neighborhood, showing the warehouse space that housed Denver's experimental music scene from 2005-2017" title="Rhinoceropolis venue exterior in the Elyria-Swansea neighborhood, showing the warehouse space that housed Denver's experimental music scene from 2005-2017"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="The former Rhinoceropolis building at 5070 North Washington Street, where DIY shows and art installations were hosted before demolition in 2017" title="The former Rhinoceropolis building at 5070 North Washington Street, where DIY shows and art installations were hosted before demolition in 2017"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Rhinoceropolis interior during a performance, showcasing the industrial space that became a cornerstone of Denver's underground music community" title="Rhinoceropolis interior during a performance, showcasing the industrial space that became a cornerstone of Denver's underground music community"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery venue-gallery">
-<h3>Larimer Lounge - Photo Gallery</h3>
+<h3>Larimer Lounge - Surviving Gentrification</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Larimer Lounge photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Larimer Lounge photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery venue-gallery">
-<h3>The Meadowlark - Photo Gallery</h3>
+<h3>The Meadowlark - Preserving Industrial Aesthetic</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="The Meadowlark photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="The Meadowlark photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 </div>
 </div>
@@ -115,7 +115,7 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Monkey Mania - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Monkey Mania photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
@@ -124,7 +124,7 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Streets of London - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Streets of London photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 </div>
 </div>
@@ -133,7 +133,7 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Kingdom of Doom - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Kingdom of Doom photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
@@ -142,7 +142,7 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>The Church - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="The Church photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 </div>
 </div>
@@ -151,7 +151,7 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>The Skylark Lounge - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="The Skylark Lounge photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
@@ -160,34 +160,34 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>3 Kings Tavern - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="3 Kings Tavern photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>RiNo - Photo Gallery</h3>
+<h3>RiNo - From Industrial to Luxury Creative District</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>Five Points - Photo Gallery</h3>
+<h3>Five Points - Systematic Venue Displacement</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Five Points photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Five Points photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
@@ -196,10 +196,10 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Central Denver - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Central Denver photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Central Denver photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
@@ -208,22 +208,22 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>South Broadway - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="South Broadway photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="South Broadway photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>Colfax - Photo Gallery</h3>
+<h3>Colfax - Protected Cultural Corridor</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Colfax photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Colfax photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
@@ -232,34 +232,34 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Downtown - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Downtown photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Downtown photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Warehouse - Photo Gallery</h3>
+<h3>Warehouse Venues - The Displaced Cultural Infrastructure</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="warehouse photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable" title="Warehouse interior, demonstrating the spatial conditions that made DIY venues economically viable"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="warehouse photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building exterior, representing the affordable spaces that housed underground music before displacement" title="Industrial building exterior, representing the affordable spaces that housed underground music before displacement"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Industrial - Photo Gallery</h3>
+<h3>Industrial Spaces - From Cultural Production to Luxury Development</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
@@ -268,10 +268,10 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Music Venue - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="music venue photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement" title="Industrial area transformation, demonstrating how mixed-use rezoning facilitated venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="music venue photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial building demolition, representing the physical elimination of cultural infrastructure" title="Industrial building demolition, representing the physical elimination of cultural infrastructure"
 </div>
 </div>
 </div>
@@ -280,34 +280,34 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Diy - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Gentrification - Photo Gallery</h3>
+<h3>Gentrification - The Systematic Elimination of Cultural Space</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="gentrification photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Gentrification transformation, demonstrating how cultural displacement accompanies neighborhood change" title="Gentrification transformation, demonstrating how cultural displacement accompanies neighborhood change"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="gentrification photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Gentrification street scene, representing the aesthetic appropriation of displaced communities" title="Gentrification street scene, representing the aesthetic appropriation of displaced communities"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Development - Photo Gallery</h3>
+<h3>Development - Real Estate Speculation and Cultural Displacement</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial zone development, showing how planning policy collaborated with real estate speculation" title="Industrial zone development, showing how planning policy collaborated with real estate speculation"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces" title="Industrial neighborhood development, showing the systematic rezoning that eliminated affordable cultural spaces"
 </div>
 </div>
 </div>

@@ -1,15 +1,15 @@
 # Essay 2: Culture-Washing and the Aesthetics of Displacement
 
 The transformation of Denver's River North Art District (RiNo) from industrial wasteland to "creative district" represents a textbook case of what urban geographer Sharon Zukin calls "culture-washing": the strategic deployment of artistic authenticity to facilitate real estate speculation and community displacement (Zukin 2010, 143-169). Between 2005 and 2015, RiNo evolved from a neighborhood that housed venues like Rhinoceropolis—a DIY space in a former print shop—into a branded cultural destination where luxury condominiums market themselves as "authentic urban living" while systematically pricing out the creative communities that established the area's cultural reputation.
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="inline-photo">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="inline-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="RiNo neighborhood view, demonstrating how culture-washing has commodified artistic authenticity" title="RiNo neighborhood view, demonstrating how culture-washing has commodified artistic authenticity"
 
 This process of culture-washing operates through a predictable geographic sequence that our venue database reveals across Denver's former industrial neighborhoods. Creative communities establish cultural infrastructure in affordable spaces zoned for industrial use, municipal planning departments rebrand these areas as "creative districts" to attract investment, real estate speculation drives land values beyond the reach of cultural users, and development marketing appropriates the aesthetic markers of displaced communities to sell luxury housing to professional-class buyers. The result is neighborhoods that maintain the visual signifiers of creative authenticity while eliminating the spatial and economic conditions that made authentic cultural production possible.
 
 ## The RiNo Model: From Warehouse to Luxury Brand
 
 The River North Art District exemplifies how culture-washing transforms working-class industrial areas into consumption landscapes for affluent buyers. Prior to 2005, the neighborhood north of downtown Denver housed light manufacturing, auto repair shops, and affordable artist studios in buildings zoned Mixed Use-Industrial. Venue data shows that spaces like Rhinoceropolis (2005-2017) and early iterations of current venues like Larimer Lounge (2000s-present) operated in this environment of industrial tolerance and affordable rent.
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Larimer Lounge photo" class="inline-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="inline-photo"> alt="Development site, representing the systematic replacement of cultural infrastructure with residential projects" title="Development site, representing the systematic replacement of cultural infrastructure with residential projects"
 
 The transformation began in 2005 with the formation of the RiNo Art District, a business improvement district that rebranded the area as a "creative corridor" suitable for mixed-use development. Planning documents from this period reveal the deliberate marketing of creative authenticity to attract both developers and middle-class residents. The 2007 RiNo General Development Plan explicitly promoted "authentic urban experiences" while simultaneously rezoning industrial parcels to Mixed Use-Commercial, a change that permitted residential development at densities incompatible with large-scale cultural venues (RiNo Art District 2007, 34-56).
 
@@ -83,79 +83,79 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <div class="photo-galleries">
 
 <div class="photo-gallery venue-gallery">
-<h3>Rhinoceropolis - Photo Gallery</h3>
+<h3>Rhinoceropolis - The Lost DIY Venue (2005-2017)</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development area view, showing how planning policy facilitates cultural displacement" title="Development area view, showing how planning policy facilitates cultural displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Rhinoceropolis photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development construction, demonstrating the physical transformation that eliminates cultural spaces" title="Development construction, demonstrating the physical transformation that eliminates cultural spaces"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery venue-gallery">
-<h3>Larimer Lounge - Photo Gallery</h3>
+<h3>Larimer Lounge - Surviving Gentrification</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Larimer Lounge photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development site, representing the systematic replacement of cultural infrastructure with residential projects" title="Development site, representing the systematic replacement of cultural infrastructure with residential projects"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="Larimer Lounge photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development area view, showing how planning policy facilitates cultural displacement" title="Development area view, showing how planning policy facilitates cultural displacement"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery venue-gallery">
-<h3>The Meadowlark - Photo Gallery</h3>
+<h3>The Meadowlark - Preserving Industrial Aesthetic</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="The Meadowlark photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="The Meadowlark photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development construction, demonstrating the physical transformation that eliminates cultural spaces" title="Development construction, demonstrating the physical transformation that eliminates cultural spaces"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>RiNo - Photo Gallery</h3>
+<h3>RiNo - From Industrial to Luxury Creative District</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="RiNo area development, showing the systematic replacement of affordable cultural spaces with luxury housing" title="RiNo area development, showing the systematic replacement of affordable cultural spaces with luxury housing"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="RiNo street scene, illustrating the aesthetic appropriation of displaced creative communities" title="RiNo street scene, illustrating the aesthetic appropriation of displaced creative communities"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="RiNo photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="River North Art District (RiNo) development, showing the transformation from industrial wasteland to luxury creative district" title="River North Art District (RiNo) development, showing the transformation from industrial wasteland to luxury creative district"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>Colfax - Photo Gallery</h3>
+<h3>Colfax - Protected Cultural Corridor</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Colfax photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Colfax area view, showing how commercial zoning has preserved DIY venues despite development pressure" title="Colfax area view, showing how commercial zoning has preserved DIY venues despite development pressure"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Colfax photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Colfax street scene, demonstrating the importance of zoning protection for cultural infrastructure" title="Colfax street scene, demonstrating the importance of zoning protection for cultural infrastructure"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery area-gallery">
-<h3>Highland - Photo Gallery</h3>
+<h3>Highland - Heritage Washing in Action</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="Highland photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Highland development, illustrating the strategic preservation of historic aesthetics for marketing purposes" title="Highland development, illustrating the strategic preservation of historic aesthetics for marketing purposes"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="Highland photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Highland (LoHi) neighborhood development, showing heritage washing through aesthetic preservation and economic displacement" title="Highland (LoHi) neighborhood development, showing heritage washing through aesthetic preservation and economic displacement"
 </div>
 </div>
 </div>
@@ -164,22 +164,22 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>LoHi - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="LoHi photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Highland area view, demonstrating how working-class authenticity is preserved visually while being eliminated economically" title="Highland area view, demonstrating how working-class authenticity is preserved visually while being eliminated economically"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="LoHi photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Highland street scene, showing the transformation from working-class Latino community to luxury residential area" title="Highland street scene, showing the transformation from working-class Latino community to luxury residential area"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Industrial - Photo Gallery</h3>
+<h3>Industrial Spaces - From Cultural Production to Luxury Development</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development area view, showing how planning policy facilitates cultural displacement" title="Development area view, showing how planning policy facilitates cultural displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="industrial photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
 </div>
 </div>
 </div>
@@ -188,10 +188,10 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Music Venue - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="music venue photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development construction, demonstrating the physical transformation that eliminates cultural spaces" title="Development construction, demonstrating the physical transformation that eliminates cultural spaces"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="music venue photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development site, representing the systematic replacement of cultural infrastructure with residential projects" title="Development site, representing the systematic replacement of cultural infrastructure with residential projects"
 </div>
 </div>
 </div>
@@ -200,22 +200,22 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Diy - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development area view, showing how planning policy facilitates cultural displacement" title="Development area view, showing how planning policy facilitates cultural displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="DIY photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
 </div>
 </div>
 </div>
 
 <div class="photo-gallery topic-gallery">
-<h3>Development - Photo Gallery</h3>
+<h3>Development - Real Estate Speculation and Cultural Displacement</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development construction, demonstrating the physical transformation that eliminates cultural spaces" title="Development construction, demonstrating the physical transformation that eliminates cultural spaces"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="development photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development site, representing the systematic replacement of cultural infrastructure with residential projects" title="Development site, representing the systematic replacement of cultural infrastructure with residential projects"
 </div>
 </div>
 </div>
@@ -224,10 +224,10 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Street Art - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="street art photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development area view, showing how planning policy facilitates cultural displacement" title="Development area view, showing how planning policy facilitates cultural displacement"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="street art photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Luxury development project, showing how real estate speculation drives venue displacement" title="Luxury development project, showing how real estate speculation drives venue displacement"
 </div>
 </div>
 </div>
@@ -236,10 +236,10 @@ Zukin, Sharon. 2010. *Naked City: The Death and Life of Authentic Urban Places*.
 <h3>Creative District - Photo Gallery</h3>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" alt="creative district photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development construction, demonstrating the physical transformation that eliminates cultural spaces" title="Development construction, demonstrating the physical transformation that eliminates cultural spaces"
 </div>
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" alt="creative district photo" class="gallery-photo">
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&crop=center" class="gallery-photo"> alt="Development site, representing the systematic replacement of cultural infrastructure with residential projects" title="Development site, representing the systematic replacement of cultural infrastructure with residential projects"
 </div>
 </div>
 </div>
