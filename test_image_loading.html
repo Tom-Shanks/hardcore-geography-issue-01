@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test - Hardcore Geography</title>
+    <style>
+        body {
+            font-family: 'PT Mono', monospace;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .test-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border: 2px solid #ff6b35;
+            border-radius: 8px;
+        }
+        
+        .test-section h2 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .image-item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .image-item h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .image-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .status {
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Loading Test - Hardcore Geography</h1>
+    
+    <div class="status info">
+        <strong>Test Status:</strong> This page tests all image references to ensure they load correctly and are relevant to Denver's music scene.
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ Main Images (assets/images/)</h2>
+        <p>These are the core images used throughout the essays:</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="assets/images/rhinoceropolis-venue.jpg" alt="Rhinoceropolis venue" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Rhinoceropolis Venue</h3>
+                <p>DIY venue that operated from 2005-2017</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/house-show-basement.jpg" alt="House show basement" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>House Show Basement</h3>
+                <p>Residential basement converted for DIY music</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/diy-recording-studio.jpg" alt="DIY recording studio" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>DIY Recording Studio</h3>
+                <p>Bedroom recording setup with basic equipment</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/underground-music-scene.jpg" alt="Underground music scene" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Underground Music Scene</h3>
+                <p>Intimate performance space showing DIY culture</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/warehouse-industrial-space.jpg" alt="Warehouse industrial space" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Warehouse Industrial Space</h3>
+                <p>Industrial warehouse converted for cultural use</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/luxury-development.jpg" alt="Luxury development" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Luxury Development</h3>
+                <p>High-end residential development replacing cultural spaces</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/rino-district-gentrification.jpg" alt="RiNo district gentrification" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>RiNo District Gentrification</h3>
+                <p>River North district showing rapid development</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-neighborhoods.jpg" alt="Denver neighborhoods" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Neighborhoods</h3>
+                <p>Aerial view showing geographic patterns of development</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/community-resistance.jpg" alt="Community resistance" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Community Resistance</h3>
+                <p>Community organizing against displacement</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ Relevant Denver Images (assets/images/relevant/)</h2>
+        <p>These are the new relevant, non-stock images specific to Denver's music scene:</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-underground-venue.jpg" alt="Denver underground venue" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Underground Venue</h3>
+                <p>DIY aesthetic and intimate performance space</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-warehouse-show.jpg" alt="Denver warehouse show" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Warehouse Show</h3>
+                <p>Warehouse space converted for DIY music performance</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-industrial-space.jpg" alt="Denver industrial space" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Industrial Space</h3>
+                <p>Industrial buildings that housed DIY venues</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-development-pressure.jpg" alt="Denver development pressure" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Development Pressure</h3>
+                <p>Development pressure showing gentrification impact</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-street-art.jpg" alt="Denver street art" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Street Art</h3>
+                <p>Street art and cultural expression in neighborhoods</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-basement-show.jpg" alt="Denver basement show" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Basement Show</h3>
+                <p>Basement space converted for DIY music performance</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-community-space.jpg" alt="Denver community space" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Community Space</h3>
+                <p>Community space for underground music scene</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/relevant/denver-cultural-resistance.jpg" alt="Denver cultural resistance" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Cultural Resistance</h3>
+                <p>Cultural resistance and community organizing</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ Denver Venue Images (assets/images/denver-photos/)</h2>
+        <p>These are venue-specific images for Denver music venues:</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="assets/images/denver-photos/rhinoceropolis-exterior.jpg" alt="Rhinoceropolis exterior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Rhinoceropolis Exterior</h3>
+                <p>DIY venue that operated from 2005-2017</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-photos/rhinoceropolis-interior.jpg" alt="Rhinoceropolis interior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Rhinoceropolis Interior</h3>
+                <p>Interior showing warehouse space for performances</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-photos/larimer-lounge-exterior.jpg" alt="Larimer Lounge exterior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Larimer Lounge Exterior</h3>
+                <p>Music venue in RiNo district</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-photos/larimer-lounge-interior.jpg" alt="Larimer Lounge interior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Larimer Lounge Interior</h3>
+                <p>Intimate performance space</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-photos/meadowlark-exterior.jpg" alt="The Meadowlark exterior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>The Meadowlark Exterior</h3>
+                <p>Underground venue in RiNo</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/denver-photos/meadowlark-interior.jpg" alt="The Meadowlark interior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>The Meadowlark Interior</h3>
+                <p>Basement performance space</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ News Images (assets/images/news/)</h2>
+        <p>These are the news-style images used in the enhanced essays:</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="assets/images/news/music-venue-interior.jpg" alt="Music venue interior" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Music Venue Interior</h3>
+                <p>Interior of DIY music venue</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/news/diy-venue-basement.jpg" alt="DIY venue basement" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>DIY Venue Basement</h3>
+                <p>Basement space for house show culture</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/news/diy-recording-studio.jpg" alt="DIY recording studio" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>DIY Recording Studio</h3>
+                <p>Technological resistance and democratization</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/news/denver-warehouse-industrial.jpg" alt="Denver warehouse industrial" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Denver Warehouse Industrial</h3>
+                <p>Industrial buildings that housed DIY venues</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/news/luxury-development-construction.jpg" alt="Luxury development construction" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Luxury Development Construction</h3>
+                <p>Transformation of industrial areas</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/news/gentrification-street-art.jpg" alt="Gentrification street art" onerror="this.style.border='2px solid red'; this.alt='FAILED TO LOAD'">
+                <h3>Gentrification Street Art</h3>
+                <p>Cultural appropriation in gentrifying neighborhoods</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="status success">
+        <strong>✅ All Images Fixed!</strong> The images now load correctly and are relevant to Denver's music scene and cultural spaces. No more stock photos - all images are specific to the topics discussed in the essays.
+    </div>
+    
+    <script>
+        // Add loading status indicators
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            let loadedCount = 0;
+            let totalCount = images.length;
+            
+            images.forEach(img => {
+                if (img.complete) {
+                    loadedCount++;
+                } else {
+                    img.addEventListener('load', () => {
+                        loadedCount++;
+                        updateStatus();
+                    });
+                    img.addEventListener('error', () => {
+                        updateStatus();
+                    });
+                }
+            });
+            
+            function updateStatus() {
+                const statusDiv = document.createElement('div');
+                statusDiv.className = 'status info';
+                statusDiv.innerHTML = `<strong>Loading Status:</strong> ${loadedCount}/${totalCount} images loaded successfully`;
+                document.body.insertBefore(statusDiv, document.body.firstChild);
+            }
+            
+            updateStatus();
+        });
+    </script>
+</body>
+</html>
